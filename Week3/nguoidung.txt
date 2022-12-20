@@ -1,0 +1,5 @@
+kien1 123 0 www.google.com
+hust 1234 1 42.116.7.14
+soict 123 1 www.google.com
+kien 1 1 www.google.com
+kien2 1 1 splan-stg.sun-asterisk.vn
