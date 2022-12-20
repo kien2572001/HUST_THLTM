@@ -1,5 +1,5 @@
-kien 123456 1
-quan 123456 1
-long 123456 1
-linh 123456 1
-hoang 123456 0
+kien 123456 0 
+quan 123456 1 
+long 123456 1 
+linh 123456 1 
+hoang 123456 0 

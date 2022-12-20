@@ -101,6 +101,7 @@ void saveToFile(node *head) {
 	}
 	fclose(fp);
 }
+
 int main(int argc, char *argv[])
 {
 	int PORT = atoi(argv[1]);
@@ -249,6 +250,7 @@ int main(int argc, char *argv[])
 							if (current->wrongPasswordCount == 3) {
 								current->status = 0;
 								current->wrongPasswordCount = 0;
+								saveToFile(head);
 								send(clientSocket, "User has been blocked. Please try again later.", strlen("User has been blocked. Please try again later."), 0);
 								
 							}

@@ -21,7 +21,7 @@
 int main(int argc, char *argv[])
 {
 	//serverPort
-	int clientPort = atoi(argv[1]);
+	char *serverIp = argv[1];
 	int serverPort = atoi(argv[2]);
 
     //Setup for code
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 
 	// 127.0.0.1 is Loopback IP
 	serverAddr.sin_addr.s_addr
-		= inet_addr("127.0.0.1");
+		= inet_addr(serverIp);
 
 	// connect() to connect to the server
 	ret = connect(clientSocket,
